@@ -40,7 +40,7 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: var(--sans); min-height: 100vh; display: flex; -webkit-font-smoothing: antialiased; }
- 
+
   /* SIDEBAR */
   .sidebar {
     width: 240px; min-height: 100vh; background: var(--primary);
@@ -95,17 +95,17 @@
     display: flex; align-items: center; gap: 8px;
   }
   .sidebar-footer-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); }
- 
+
   /* MAIN */
   .main { margin-left: 240px; flex: 1; padding: 36px 40px; min-height: 100vh; max-width: calc(100vw - 240px); }
   .page { display: none; }
   .page.active { display: block; animation: fadeIn 0.18s ease; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
- 
+
   .page-header { margin-bottom: 28px; }
   .page-title { font-family: var(--display); font-weight: 700; font-size: 1.75rem; letter-spacing: -0.04em; color: var(--text); margin-bottom: 3px; }
   .page-sub { color: var(--muted); font-size: 0.875rem; font-weight: 400; }
- 
+
   /* CARDS */
   .card {
     background: var(--surface); border: 1px solid var(--border);
@@ -116,13 +116,13 @@
     font-size: 0.72rem; font-weight: 600; color: var(--muted);
     letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 16px;
   }
- 
+
   /* GRID */
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
   .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
   .col-span-2 { grid-column: span 2; }
- 
+
   /* STAT CARDS */
   .stat-card {
     background: var(--surface); border: 1px solid var(--border);
@@ -133,20 +133,20 @@
   .stat-sub { font-size: 0.75rem; color: var(--muted); margin-top: 5px; }
   .stat-accent { color: var(--text); }
   .stat-icon { font-size: 1.4rem; margin-bottom: 10px; }
- 
+
   /* VOLT HIGHLIGHT */
   .volt-pill {
     display: inline-block; background: var(--teal); color: #fff;
     font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px;
     letter-spacing: 0.02em; margin-top: 6px;
   }
- 
+
   /* ALERTS */
   .alert { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border-radius: var(--radius-sm); font-size: 0.84rem; margin-bottom: 8px; }
   .alert-warn { background: var(--warning-bg); border: 1px solid var(--warning-border); color: #92520a; }
   .alert-danger { background: var(--danger-bg); border: 1px solid var(--danger-border); color: #b91c1c; }
   .alert-success { background: var(--success-bg); border: 1px solid var(--success-border); color: #166534; }
- 
+
   /* TABLES */
   table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
   th {
@@ -159,7 +159,7 @@
   td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: #f0f4f9; }
- 
+
   /* BADGES */
   .badge {
     display: inline-flex; align-items: center; padding: 3px 9px; border-radius: 999px;
@@ -171,7 +171,7 @@
   .badge-blue { background: var(--primary-light); color: var(--primary); border: 1px solid rgba(30,58,95,0.18); }
   .badge-teal { background: var(--teal-light); color: var(--teal-dark); border: 1px solid rgba(44,177,166,0.22); }
   .badge-gray { background: var(--surface2); color: var(--text-secondary); border: 1px solid var(--border); }
- 
+
   /* BUTTONS */
   .btn {
     display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px;
@@ -193,7 +193,7 @@
   .btn-danger:hover { background: rgba(239,68,68,0.14); }
   .btn-sm { padding: 5px 13px; font-size: 0.8rem; }
   .btn-xs { padding: 3px 10px; font-size: 0.74rem; border-radius: 999px; }
- 
+
   /* INPUTS */
   input, select {
     background: var(--surface2); border: 1px solid var(--border);
@@ -213,17 +213,17 @@
   }
   .form-group { margin-bottom: 16px; }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
- 
+
   /* PROGRESS BAR */
   .progress-bar { height: 5px; background: var(--surface2); border-radius: 99px; overflow: hidden; margin-top: 10px; }
   .progress-fill { height: 100%; border-radius: 99px; transition: width 0.5s ease; }
- 
+
   /* DIVIDER */
   .divider { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
- 
+
   /* SECTION SPACING */
   .section { margin-bottom: 18px; }
- 
+
   /* MODAL */
   .modal-overlay {
     display: none; position: fixed; inset: 0;
@@ -240,10 +240,10 @@
   @keyframes modalIn { from { opacity:0; transform:scale(0.95) translateY(8px); } to { opacity:1; transform:scale(1) translateY(0); } }
   .modal-title { font-family: var(--display); font-weight: 700; font-size: 1.15rem; letter-spacing: -0.03em; margin-bottom: 20px; color: var(--text); }
   .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border); }
- 
+
   /* CHIP */
   .chip { display: inline-flex; align-items: center; gap: 5px; background: var(--surface2); padding: 3px 10px; border-radius: 999px; font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; }
- 
+
   /* ORDER ITEM */
   .order-item {
     display: flex; align-items: center; justify-content: space-between;
@@ -258,7 +258,7 @@
     letter-spacing: -0.04em; color: #fff; min-width: 52px; text-align: center;
     background: var(--teal); border-radius: 8px; padding: 3px 12px;
   }
- 
+
   /* TOAST */
   .toast {
     position: fixed; bottom: 28px; right: 28px; background: var(--primary);
@@ -268,7 +268,7 @@
     box-shadow: 0 8px 24px rgba(30,58,95,0.3);
   }
   @keyframes slideUp { from { opacity:0; transform:translateY(12px) scale(0.95); } to { opacity:1; transform:translateY(0) scale(1); } }
- 
+
   /* STEP INDICATOR */
   .steps { display: flex; align-items: center; gap: 0; margin-bottom: 28px; }
   .step { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--muted); font-weight: 500; }
@@ -281,36 +281,38 @@
   .step.active .step-num { background: var(--teal); color: #fff; border-color: var(--teal); }
   .step.done .step-num { background: var(--primary); color: #fff; border-color: var(--primary); font-size: 0.6rem; }
   .step-line { flex: 1; height: 1px; background: var(--border); margin: 0 10px; min-width: 20px; }
- 
+
   /* MAPPING ENTRY */
   .map-entry { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; box-shadow: var(--shadow-sm); }
   .map-entry-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
   .map-items { display: flex; flex-direction: column; gap: 7px; }
   .map-item-row { display: grid; grid-template-columns: 1fr 80px 32px; gap: 8px; align-items: center; }
- 
+
   /* STAT ICON WRAP */
   .stat-icon-wrap {
     width: 36px; height: 36px; border-radius: 10px; background: var(--primary-light);
     display: flex; align-items: center; justify-content: center; margin-bottom: 14px;
   }
   .stat-icon-wrap svg { width: 18px; height: 18px; stroke: var(--primary); fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
- 
+
   /* CARD TITLE ICON */
   .card-title-row { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
   .card-title-row svg { width: 14px; height: 14px; stroke: var(--muted); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
   .card-title { font-size: 0.72rem; font-weight: 600; color: var(--muted); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 0; }
- 
+
   /* LOGIN PAGE */
   .login-page {
     position: fixed; inset: 0; z-index: 1000;
     display: flex; align-items: stretch;
     background: var(--bg);
+    overflow-y: auto;
   }
   .login-left {
     width: 52%; background: var(--primary);
     display: flex; flex-direction: column;
     justify-content: center; padding: 72px 64px;
     position: relative; overflow: hidden;
+    flex-shrink: 0;
   }
   .login-left::before {
     content: '';
@@ -439,16 +441,16 @@
     z-index: 149; backdrop-filter: blur(2px);
   }
   .mobile-overlay.open { display: block; }
- 
+
   /* ── TABLET (769px – 1024px) ─────────────────────────── */
   @media (min-width: 769px) and (max-width: 1024px) {
- 
+
     /* Collapse sidebar to 64px icon-only rail */
     .sidebar { width: 64px; }
     .logo { padding: 16px 0; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
     .logo-text { display: none; }
     .logo-mark { width: 36px; height: 36px; }
- 
+
     .nav { padding: 12px 8px; gap: 2px; }
     .nav-section-label { display: none; }
     .nav-item { padding: 10px; justify-content: center; border-radius: 10px; }
@@ -457,50 +459,59 @@
     .nav-item { font-size: 0; }
     .nav-icon-wrap { width: 32px; height: 32px; flex-shrink: 0; }
     .nav-icon-wrap svg { width: 16px; height: 16px; }
- 
+
     .sidebar-footer { padding: 12px 8px; justify-content: center; }
     .sidebar-footer-dot { width: 7px; height: 7px; }
     /* Hide footer text */
     .sidebar-footer { font-size: 0; }
     .sidebar-footer-dot { display: block; }
- 
+
     /* Main shifts right by rail width */
     .main { margin-left: 64px; padding: 28px 24px; max-width: calc(100vw - 64px); }
- 
+
     /* Grids: 4-col → 2-col, 3-col → 2-col, 2-col stays 2-col */
     .grid-4 { grid-template-columns: 1fr 1fr; gap: 14px; }
     .grid-3 { grid-template-columns: 1fr 1fr; gap: 14px; }
- 
+
     /* Page title */
     .page-title { font-size: 1.5rem; }
- 
+
     /* Tables scroll on tight layouts */
     .card { overflow-x: auto; }
     table { min-width: 480px; }
     .map-entry { overflow-x: auto; }
- 
-    /* Login: 40/60 split */
-    .login-left { width: 42%; padding: 48px 40px; }
-    .login-headline { font-size: 1.9rem; }
-    .login-desc { font-size: 0.875rem; }
- 
+
+    /* Login: side by side, left panel scrolls if needed */
+    .login-page { align-items: stretch; }
+    .login-left {
+      width: 44%;
+      padding: 40px 36px;
+      overflow-y: auto;
+      justify-content: flex-start;
+    }
+    .login-brand { margin-bottom: 32px; }
+    .login-headline { font-size: 1.75rem; margin-bottom: 14px; }
+    .login-desc { font-size: 0.875rem; margin-bottom: 28px; }
+    .login-feature { font-size: 0.875rem; }
+    .login-right { overflow-y: auto; }
+
     /* Stat value a touch smaller */
     .stat-value { font-size: 1.9rem; }
- 
+
     /* Order items stay horizontal */
     .order-item { flex-wrap: nowrap; }
   }
- 
+
   /* ── MOBILE (≤768px) ─────────────────────────────────── */
   @media (max-width: 768px) {
     body { display: block; }
- 
+
     /* Mobile header visible */
     .mobile-header { display: flex; }
- 
+
     /* App shell stacks vertically */
     #app-shell { display: block !important; padding-top: 56px; }
- 
+
     /* Sidebar becomes a slide-in drawer */
     .sidebar {
       width: 260px; transform: translateX(-100%);
@@ -508,38 +519,38 @@
       z-index: 150; top: 0;
     }
     .sidebar.open { transform: translateX(0); }
- 
+
     /* Main takes full width */
     .main { margin-left: 0; padding: 20px 16px 100px; max-width: 100vw; }
- 
+
     /* Grids collapse to 1 col */
     .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; gap: 12px; }
- 
+
     /* Page headers stack */
     .page-header.flex { flex-direction: column; align-items: flex-start; gap: 12px; }
     .page-header.flex .btn { width: 100%; justify-content: center; }
- 
+
     /* Tables: horizontal scroll */
     .card { padding: 16px; overflow-x: auto; }
     table { min-width: 520px; }
- 
+
     /* Order items wrap on mobile */
     .order-item { flex-wrap: wrap; gap: 10px; }
     .order-item > div:first-child { width: 100%; }
- 
+
     /* Steps compress */
     .steps { flex-wrap: wrap; gap: 8px; }
     .step-line { display: none; }
- 
+
     /* Page title smaller */
     .page-title { font-size: 1.35rem; }
- 
+
     /* Stat cards 2-col on mobile */
     .grid-4 { grid-template-columns: 1fr 1fr; }
- 
+
     /* Map entry table scroll */
     .map-entry { overflow-x: auto; }
- 
+
     /* Modals full-screen on mobile */
     .modal-overlay { align-items: flex-end; }
     .modal {
@@ -548,25 +559,49 @@
     }
     .modal-actions { flex-direction: column-reverse; }
     .modal-actions .btn { width: 100%; justify-content: center; }
- 
+
     /* Form rows stack */
     .form-row { grid-template-columns: 1fr; }
- 
+
     /* Order panel action rows */
     #order-panel-suggested > div:last-child { flex-wrap: wrap; gap: 10px; }
     #order-panel-suggested > div:last-child .flex { width: 100%; }
     #order-panel-suggested > div:last-child .btn { flex: 1; justify-content: center; }
- 
-    /* Login page: single column */
-    .login-page { flex-direction: column; overflow-y: auto; }
-    .login-left { width: 100%; padding: 40px 24px 36px; min-height: auto; justify-content: flex-start; }
-    .login-brand { margin-bottom: 28px; }
-    .login-headline { font-size: 1.65rem; margin-bottom: 14px; }
-    .login-desc { font-size: 0.9rem; margin-bottom: 28px; }
-    .login-right { padding: 28px 24px 48px; }
+
+    /* Login page: single scrollable column */
+    .login-page {
+      flex-direction: column;
+      overflow-y: auto;
+      min-height: 100vh;
+      height: auto;
+      position: relative;
+    }
+    .login-left {
+      width: 100%;
+      padding: 32px 24px 32px;
+      min-height: auto;
+      height: auto;
+      justify-content: flex-start;
+      flex-shrink: 0;
+    }
+    .login-brand { margin-bottom: 20px; }
+    .login-brand-mark { width: 40px; height: 40px; }
+    .login-brand-name { font-size: 1.2rem; }
+    .login-headline { font-size: 1.5rem; margin-bottom: 10px; max-width: 100%; }
+    .login-desc { font-size: 0.875rem; margin-bottom: 20px; max-width: 100%; }
+    .login-features { gap: 10px; }
+    .login-feature { font-size: 0.875rem; gap: 10px; }
+    .login-feature-check { width: 18px; height: 18px; flex-shrink: 0; }
+    .login-right {
+      padding: 28px 24px 48px;
+      flex-shrink: 0;
+    }
     .login-card { max-width: 100%; }
+    .login-card-title { font-size: 1.4rem; }
+    .login-btn { padding: 14px; font-size: 1rem; }
+    .login-demo-btn { padding: 13px; font-size: 0.9rem; }
   }
- 
+
   @media (max-width: 420px) {
     .grid-4 { grid-template-columns: 1fr; }
     .main { padding: 16px 12px 100px; }
@@ -577,7 +612,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- MOBILE HEADER (hidden on desktop) -->
 <div class="mobile-header" id="mobile-header" style="display:none;">
   <div class="mobile-header-brand">
@@ -592,7 +627,7 @@
   </button>
 </div>
 <div class="mobile-overlay" id="mobile-overlay" onclick="closeMobileNav()"></div>
- 
+
 <!-- LOGIN PAGE -->
 <div id="login-page" class="login-page">
   <!-- Left: Branding & value props -->
@@ -608,10 +643,10 @@
         <div class="login-brand-tag">Orthodontics</div>
       </div>
     </div>
- 
+
     <div class="login-headline">Smart supply ordering for <span>orthodontic</span> practices.</div>
     <p class="login-desc">SupplySync connects your appointment schedule directly to your supply ordering process.</p>
- 
+
     <div class="login-features">
       <div class="login-feature">
         <div class="login-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -627,13 +662,13 @@
       </div>
     </div>
   </div>
- 
+
   <!-- Right: Login form -->
   <div class="login-right">
     <div class="login-card">
       <div class="login-card-title">Welcome back</div>
       <div class="login-card-sub">Sign in to your SupplySync account</div>
- 
+
       <div class="login-field">
         <label>Email address</label>
         <input type="email" placeholder="you@practice.com" id="login-email"/>
@@ -642,25 +677,25 @@
         <label>Password</label>
         <input type="password" placeholder="••••••••" id="login-password"/>
       </div>
- 
+
       <button class="login-btn" onclick="doLogin()">Sign In</button>
- 
+
       <div class="login-divider">
         <div class="login-divider-line"></div>
         <div class="login-divider-text">or</div>
         <div class="login-divider-line"></div>
       </div>
- 
+
       <button class="login-demo-btn" onclick="doLogin()">Continue with Demo Account</button>
- 
+
       <div class="login-footer-note">By signing in you agree to our Terms of Service and Privacy Policy.</div>
     </div>
   </div>
 </div>
- 
+
 <!-- APP SHELL -->
 <div id="app-shell" style="display:flex;width:100%;min-height:100vh;">
- 
+
 <!-- SIDEBAR -->
 <aside class="sidebar" id="app-sidebar">
   <div class="logo">
@@ -701,17 +736,17 @@
   </nav>
   <div class="sidebar-footer"><div class="sidebar-footer-dot"></div>MVP v1.0</div>
 </aside>
- 
+
 <!-- MAIN CONTENT -->
 <main class="main">
- 
+
   <!-- DASHBOARD -->
   <div id="page-dashboard" class="page active">
     <div class="page-header">
       <div class="page-title">Dashboard</div>
       <div class="page-sub">Next 14 days · Valley Orthodontics</div>
     </div>
- 
+
     <div class="grid-4 section">
       <div class="stat-card">
         <div class="stat-icon-wrap"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
@@ -738,7 +773,7 @@
         <div class="stat-sub">items to reorder</div>
       </div>
     </div>
- 
+
     <div class="grid-2 section">
       <div class="card">
         <div class="card-title-row">
@@ -755,7 +790,7 @@
         <div id="dash-appt-list"></div>
       </div>
     </div>
- 
+
     <div class="card">
       <div class="card-title-row">
         <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
@@ -769,7 +804,7 @@
       </button>
     </div>
   </div>
- 
+
   <!-- APPOINTMENTS -->
   <div id="page-appointments" class="page">
     <div class="page-header flex justify-between items-center">
@@ -791,7 +826,7 @@
       </table>
     </div>
   </div>
- 
+
   <!-- PROCEDURES -->
   <div id="page-procedures" class="page">
     <div class="page-header flex justify-between items-center">
@@ -806,7 +841,7 @@
     </div>
     <div id="proc-list"></div>
   </div>
- 
+
   <!-- INVENTORY -->
   <div id="page-inventory" class="page">
     <div class="page-header flex justify-between items-center">
@@ -828,14 +863,14 @@
       </table>
     </div>
   </div>
- 
+
   <!-- ORDER -->
   <div id="page-order" class="page">
     <div class="page-header">
       <div class="page-title">Generate Order</div>
       <div class="page-sub">Suggested purchase quantities based on schedule + inventory</div>
     </div>
- 
+
     <div class="steps">
       <div class="step done"><div class="step-num"><svg style="width:10px;height:10px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div> Schedule</div>
       <div class="step-line"></div>
@@ -845,7 +880,7 @@
       <div class="step-line"></div>
       <div class="step active"><div class="step-num">4</div> Order</div>
     </div>
- 
+
     <!-- Demand Calculation panel -->
     <div id="order-panel-demand" class="card section">
       <div class="card-title-row">
@@ -861,7 +896,7 @@
         </button>
       </div>
     </div>
- 
+
     <!-- Suggested Order panel (hidden initially) -->
     <div id="order-panel-suggested" class="card section" style="display:none;">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
@@ -895,11 +930,11 @@
       </div>
     </div>
   </div>
- 
+
 </main>
- 
+
 </div><!-- end app-shell -->
- 
+
 <!-- MODALS -->
 <div class="modal-overlay" id="appt-modal">
   <div class="modal">
@@ -923,7 +958,7 @@
     </div>
   </div>
 </div>
- 
+
 <div class="modal-overlay" id="inv-modal">
   <div class="modal">
     <div class="modal-title">Add Inventory Item</div>
@@ -942,7 +977,7 @@
     </div>
   </div>
 </div>
- 
+
 <div class="modal-overlay" id="proc-modal">
   <div class="modal">
     <div class="modal-title">Add Procedure Mapping</div>
@@ -965,7 +1000,7 @@
     </div>
   </div>
 </div>
- 
+
 <div class="modal-overlay" id="order-item-modal">
   <div class="modal">
     <div class="modal-title">Add Item to Order</div>
@@ -995,9 +1030,9 @@
     </div>
   </div>
 </div>
- 
+
 <div class="toast" id="toast"></div>
- 
+
 <script>
 // ─── STATE ───────────────────────────────────────────────
 const state = {
@@ -1032,7 +1067,7 @@ const state = {
   nextApptId: 13,
   nextInvId: 7,
 };
- 
+
 // ─── NAVIGATION ──────────────────────────────────────────
 function navigate(page) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -1051,7 +1086,7 @@ function navigate(page) {
   closeMobileNav();
   render(page);
 }
- 
+
 // ─── RENDER ──────────────────────────────────────────────
 function render(page) {
   if(page === 'dashboard') renderDashboard();
@@ -1060,7 +1095,7 @@ function render(page) {
   else if(page === 'inventory') renderInventory();
   else if(page === 'order') renderOrder();
 }
- 
+
 function calcDemand() {
   const demand = {};
   state.appointments.forEach(appt => {
@@ -1072,7 +1107,7 @@ function calcDemand() {
   });
   return demand;
 }
- 
+
 function calcOrder() {
   const demand = calcDemand();
   const order = {};
@@ -1084,19 +1119,19 @@ function calcOrder() {
   });
   return order;
 }
- 
+
 function renderDashboard() {
   const demand = calcDemand();
   const order = calcOrder();
   const totalItems = Object.values(demand).reduce((a,b)=>a+b,0);
   const lowStock = state.inventory.filter(i => i.qty <= i.threshold);
   const orderCount = Object.keys(order).length;
- 
+
   document.getElementById('dash-appts').textContent = state.appointments.length;
   document.getElementById('dash-items').textContent = totalItems;
   document.getElementById('dash-alerts').textContent = lowStock.length;
   document.getElementById('dash-order-count').textContent = orderCount;
- 
+
   // Alerts
   const al = document.getElementById('dash-alert-list');
   if(lowStock.length === 0) {
@@ -1107,14 +1142,14 @@ function renderDashboard() {
         <div><strong>${i.name}</strong> — ${i.qty} remaining <span style="color:var(--muted)">(threshold: ${i.threshold})</span></div>
       </div>`).join('');
   }
- 
+
   // Upcoming appts (first 6)
   const al2 = document.getElementById('dash-appt-list');
   const sorted = [...state.appointments].sort((a,b)=>a.date.localeCompare(b.date)).slice(0,6);
   al2.innerHTML = `<table><thead><tr><th>Date</th><th>Procedure</th><th>Location</th></tr></thead><tbody>
     ${sorted.map(a=>`<tr><td class="mono">${a.date}</td><td>${a.procedure}</td><td>${a.location}</td></tr>`).join('')}
   </tbody></table>`;
- 
+
   // Demand table
   const dt = document.getElementById('dash-demand-table');
   const rows = Object.entries(demand).map(([item, needed]) => {
@@ -1136,7 +1171,7 @@ function renderDashboard() {
   });
   dt.innerHTML = `<table><thead><tr><th>Supply Item</th><th>Needed</th><th>On Hand</th><th>Level</th><th>Status</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
 }
- 
+
 function renderAppointments() {
   const sorted = [...state.appointments].sort((a,b)=>a.date.localeCompare(b.date));
   document.getElementById('appt-table-body').innerHTML = sorted.map(a => `
@@ -1148,7 +1183,7 @@ function renderAppointments() {
       <td><button class="btn btn-danger btn-sm" onclick="deleteAppt(${a.id})">Remove</button></td>
     </tr>`).join('');
 }
- 
+
 function renderProcedures() {
   const el = document.getElementById('proc-list');
   el.innerHTML = state.procedures.map((p,pi) => {
@@ -1189,7 +1224,7 @@ function renderProcedures() {
     </div>`;
   }).join('');
 }
- 
+
 function renderInventory() {
   document.getElementById('inv-table-body').innerHTML = state.inventory.map(i => {
     const outOfStock = i.qty === 0;
@@ -1210,15 +1245,15 @@ function renderInventory() {
     </tr>`;
   }).join('');
 }
- 
+
 function showOrderPanel(panel) {
   document.getElementById('order-panel-demand').style.display = panel === 'demand' ? 'block' : 'none';
   document.getElementById('order-panel-suggested').style.display = panel === 'suggested' ? 'block' : 'none';
 }
- 
+
 // ─── ORDER STATE ─────────────────────────────────────────
 let orderState = {}; // { itemName: qty }
- 
+
 function initOrderState() {
   const order = calcOrder();
   orderState = {};
@@ -1226,13 +1261,13 @@ function initOrderState() {
     orderState[item] = { qty: d.toOrder, needed: d.needed, onHand: d.onHand, supplier: d.supplier };
   });
 }
- 
+
 function adjustOrderQty(item, delta) {
   if(!orderState[item]) return;
   orderState[item].qty = Math.max(0, orderState[item].qty + delta);
   document.getElementById('order-qty-' + CSS.escape(item)).textContent = orderState[item].qty;
 }
- 
+
 function addLowStockToOrder(item) {
   const inv = state.inventory.find(i => i.name === item);
   if(!inv) return;
@@ -1254,7 +1289,7 @@ function addLowStockToOrder(item) {
   }
   toast(`${item} added to order`);
 }
- 
+
 function renderOrderList() {
   const ol = document.getElementById('order-list');
   const entries = Object.entries(orderState);
@@ -1279,7 +1314,7 @@ function renderOrderList() {
       </div>
     </div>`).join('');
 }
- 
+
 function removeOrderItem(item) {
   delete orderState[item];
   renderOrderList();
@@ -1287,7 +1322,7 @@ function removeOrderItem(item) {
   renderLowStockAlerts();
   toast(`${item} removed from order`);
 }
- 
+
 function handleOrderItemSelect() {
   const sel = document.getElementById('order-item-select');
   const customGroup = document.getElementById('order-item-custom-group');
@@ -1306,7 +1341,7 @@ function handleOrderItemSelect() {
     }
   }
 }
- 
+
 function addOrderItem() {
   const sel = document.getElementById('order-item-select');
   let name = sel.value === '__custom__'
@@ -1326,7 +1361,7 @@ function addOrderItem() {
   renderLowStockAlerts();
   toast(`${name} added to order`);
 }
- 
+
 function renderLowStockAlerts() {
   const lowStock = state.inventory.filter(i => i.qty <= i.threshold);
   const el = document.getElementById('order-low-stock');
@@ -1359,11 +1394,11 @@ function renderLowStockAlerts() {
       </div>`;
     }).join('')}`;
 }
- 
+
 function renderOrder() {
   showOrderPanel('demand');
   initOrderState();
- 
+
   // Demand calc
   const dc = document.getElementById('demand-calc');
   const procCounts = {};
@@ -1381,14 +1416,14 @@ function renderOrder() {
       </div>`).join('');
   }).join('');
   dc.innerHTML = rows || '<div class="text-muted">No demand calculated.</div>';
- 
+
   // Suggested order list with adjustable quantities
   renderOrderList();
- 
+
   // Low stock alerts
   renderLowStockAlerts();
 }
- 
+
 // ─── MODALS ──────────────────────────────────────────────
 function openModal(id) {
   if(id === 'proc-modal') {
@@ -1434,7 +1469,7 @@ function openModal(id) {
   }
   document.getElementById(id).classList.add('open');
 }
- 
+
 function handleProcNameChange() {
   const sel = document.getElementById('proc-name');
   const newGroup = document.getElementById('proc-new-name-group');
@@ -1443,11 +1478,11 @@ function handleProcNameChange() {
     document.getElementById('proc-new-name').value = '';
   }
 }
- 
+
 document.querySelectorAll('.modal-overlay').forEach(m => {
   m.addEventListener('click', e => { if(e.target === m) m.classList.remove('open'); });
 });
- 
+
 // ─── ACTIONS ─────────────────────────────────────────────
 function addAppointment() {
   const date = document.getElementById('appt-date').value;
@@ -1459,13 +1494,13 @@ function addAppointment() {
   renderAppointments();
   toast('Appointment added');
 }
- 
+
 function deleteAppt(id) {
   state.appointments = state.appointments.filter(a => a.id !== id);
   renderAppointments();
   toast('Appointment removed');
 }
- 
+
 function addInventoryItem() {
   const name = document.getElementById('inv-name').value.trim();
   const sku = document.getElementById('inv-sku').value.trim();
@@ -1478,20 +1513,20 @@ function addInventoryItem() {
   renderInventory();
   toast('Item added to inventory');
 }
- 
+
 function deleteInv(id) {
   state.inventory = state.inventory.filter(i => i.id !== id);
   renderInventory();
   toast('Item removed');
 }
- 
+
 let supplyRows = [];
 function openProcModal() {
   supplyRows = [];
   document.getElementById('proc-supply-rows').innerHTML = '';
   openModal('proc-modal');
 }
- 
+
 function addSupplyRow() {
   const rowId = Date.now();
   supplyRows.push(rowId);
@@ -1505,13 +1540,13 @@ function addSupplyRow() {
     <button class="btn btn-danger btn-sm" onclick="removeRow(${rowId})" style="padding:5px 10px">✕</button>`;
   document.getElementById('proc-supply-rows').appendChild(row);
 }
- 
+
 function removeRow(id) {
   const el = document.getElementById('supply-row-' + id);
   if(el) el.remove();
   supplyRows = supplyRows.filter(r => r !== id);
 }
- 
+
 function saveProcMapping() {
   const sel = document.getElementById('proc-name');
   let name = sel.value;
@@ -1534,13 +1569,13 @@ function saveProcMapping() {
   renderProcedures();
   toast('Procedure mapping saved');
 }
- 
+
 function deleteProc(idx) {
   state.procedures.splice(idx, 1);
   renderProcedures();
   toast('Mapping removed');
 }
- 
+
 // ─── EXPORT ──────────────────────────────────────────────
 function exportCSV() {
   const lines = ['Item,Quantity Needed,On Hand,To Order,Supplier'];
@@ -1553,12 +1588,12 @@ function exportCSV() {
   a.href = url; a.download = 'supply-order.csv'; a.click();
   toast('CSV exported!');
 }
- 
+
 function copyOrder() {
   const text = Object.entries(orderState).map(([item, d]) => `${item}: ${d.qty} units`).join('\n');
   navigator.clipboard.writeText(text).then(() => toast('Copied to clipboard!'));
 }
- 
+
 // ─── TOAST ───────────────────────────────────────────────
 function toast(msg) {
   const t = document.getElementById('toast');
@@ -1566,7 +1601,7 @@ function toast(msg) {
   t.style.display = 'block';
   setTimeout(() => { t.style.display = 'none'; }, 2500);
 }
- 
+
 // ─── MOBILE NAV ──────────────────────────────────────────
 function toggleMobileNav() {
   document.getElementById('app-sidebar').classList.toggle('open');
@@ -1576,7 +1611,7 @@ function closeMobileNav() {
   document.getElementById('app-sidebar').classList.remove('open');
   document.getElementById('mobile-overlay').classList.remove('open');
 }
- 
+
 // ─── LOGIN ───────────────────────────────────────────────
 function doLogin() {
   document.getElementById('login-page').style.display = 'none';
@@ -1587,11 +1622,11 @@ function doLogin() {
   }
   renderDashboard();
 }
- 
+
 // ─── INIT ────────────────────────────────────────────────
 // App shell hidden until login
 document.getElementById('app-shell').style.display = 'none';
- 
+
 // Handle resize
 window.addEventListener('resize', () => {
   const mh = document.getElementById('mobile-header');
@@ -1606,4 +1641,3 @@ window.addEventListener('resize', () => {
 </script>
 </body>
 </html>
- 
